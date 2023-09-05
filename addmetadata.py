@@ -21,7 +21,7 @@ writer = object_detector.MetadataWriter.create_for_inference(
 print(writer.get_metadata_json())
 
 # Populate the metadata into the model.
-output_model_path = "hasil_coba.tflite"  # Change this as needed
+output_model_path = "result_model.tflite"  # Change this as needed
 writer_utils.save_file(writer.populate(), output_model_path)
 
 # Display the metadata in the model.
